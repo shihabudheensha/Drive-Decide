@@ -2,7 +2,12 @@
   "name": "drivingquiz",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://shihabudheensha.github.io/Drive-Decide",
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +20,7 @@
   },
   "devDependencies": {
     "@parcel/config-default": "^2.4.0",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.7.0",
     "parcel-reporter-static-files-copy": "^1.3.4"
   },
